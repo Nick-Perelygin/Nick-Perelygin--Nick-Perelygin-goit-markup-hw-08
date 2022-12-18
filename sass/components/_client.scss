@@ -1,0 +1,90 @@
+/*Постійні клієнти*/
+
+.section-client {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.section-client__ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section-client__li {
+    width: 210px;
+    fill: var(--section-colors);
+    border: 1px solid var(--section-colors);
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 52px;
+    padding-right: 52px;
+    border-radius: 4px;
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    margin-bottom: 30px;
+    margin-right: 30px;
+
+    &:nth-child(n+5) {
+        margin-bottom: 0px;
+    }
+    
+    &:nth-child(n+6) {
+        margin-bottom: 0px;
+    }
+    
+    &:nth-child(2n+2) {
+        margin-right: 0px;
+    }
+
+    &:hover, &:focus {
+        cursor: pointer;
+        border-color: var(--accent-color);
+        fill: var(--accent-color);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .section-client__li {
+        width: 226px;
+        padding-left: 60px;
+        padding-right: 60px;
+
+        &:nth-child(3n+3) {
+            margin-right: 0;
+        }
+        &:nth-child(n+5) {
+            margin-bottom: 0;
+        }
+        &:nth-child(n+4) {
+            margin-bottom: 0;
+        }
+        
+        &:nth-child(2n+2) {
+            margin-right: 30px;
+        }
+        
+        &:nth-child(n+6) {
+            margin-bottom: 0;
+            margin-right: 0;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .section-client__ul {
+        justify-content: center;
+    }
+
+    .section-client__ul>.section-client__li {
+        width: 170px;
+        padding-left: 32px;
+        padding-right: 32px;
+        margin-right: 30px;
+        margin-bottom: 0;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}

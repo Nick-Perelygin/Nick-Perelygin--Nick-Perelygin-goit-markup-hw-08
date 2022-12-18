@@ -1,0 +1,125 @@
+    /* Герой */
+
+    .section-main__title {
+        color: var(--primery-color);
+        font-weight: 900;
+        font-size: 26px;
+        text-transform: uppercase;
+        line-height: 1.36;
+        letter-spacing: 0.06em;
+    }
+
+    .section-main__button {
+        background-color: var(--accent-color);
+        color: var(--primery-color);
+        border-color: var(--accent-color);
+        border-radius: 4px;
+        cursor: pointer;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.88;
+        letter-spacing: 0.06em;
+        margin-top: 30px;
+        padding-left: 24px;
+        padding-right: 24px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .section-main {
+        min-width: 480px;
+        min-height: 400px;
+        padding-top: 118px;
+        padding-bottom: 118px;
+        text-align: center;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: #2F303A;
+        background-image: linear-gradient(to right,
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+            url(../../images/heroes_mobile.jpg);
+        background-size: 480px 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        .section-main {
+            background-image: linear-gradient(to right,
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+            url(../../images/heroes_mobile2x.jpg);
+        }
+        
+    }
+
+    @media screen and (min-width: 768px){
+        .section-main {
+            min-width: 768px;
+            min-height: 400px;
+            background-image: linear-gradient(to right,
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+            url(../../images/heroes_tablet.jpg);
+            background-size: 768px 400px;
+        }
+
+        @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+            .section-main {
+                background-image: linear-gradient(to right,
+                        rgba(47, 48, 58, 0.4),
+                        rgba(47, 48, 58, 0.4)),
+                    url(../../images/heroes_tablet2x.jpg);
+            }
+        
+        }
+               
+        .section-main__title {
+            font-size: 26px;
+        }
+
+        .section-main__button {
+            padding-left: 24px;
+            padding-right: 24px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        .section-main {
+            max-width: 1600px;
+            min-height: 600px;
+            padding-top: 200px;
+            padding-bottom: 200px;
+            background-image: linear-gradient(to right,
+                    rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)),
+                url(../../images/heroes_desktop.jpg);
+            background-size: 1600px 600px;
+        }
+
+        @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+            .section-main {
+                background-image: linear-gradient(to right,
+                        rgba(47, 48, 58, 0.4),
+                        rgba(47, 48, 58, 0.4)),
+                    url(../../images/heroes_desktop2x.jpg);
+            }
+        }
+
+        .section-main__title {
+            font-size: 44px;
+        }
+
+        .section-main__button {
+            padding: 10px 32px;
+        }
+    }

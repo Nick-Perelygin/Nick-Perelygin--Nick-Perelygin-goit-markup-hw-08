@@ -1,0 +1,37 @@
+ /* Лого */
+
+.header-nav__studio {
+     color: #000000;
+     font-family: raleway, sans-serif;
+     font-size: 26px;
+     line-height: 1.17;
+     text-decoration: none;
+}
+
+.footer__studio {
+     color: var(--primery-color);
+     font-family: raleway, sans-serif;
+     font-size: 26px;
+     line-height: 1.17;
+     text-decoration: none;
+}
+
+.header-nav__logo {
+    color: var(--accent-color);
+}
+
+@media screen and (max-width: 767px) {
+    .header-nav__studio {
+        display: inline-block;
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .header-nav__studio {
+        margin-top: 26px;
+        margin-bottom: 26px;
+        font-size: 24px;
+    }
+}
